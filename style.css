@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: hsl(0, 0%, 94%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.main__container {
+  background-color: hsl(0, 0%, 100%);
+  width: 90%;
+  padding: 2em;
+  border-radius: 1em;
+  border-bottom-right-radius: 5em;
+  max-width: 900px;
+}
+
+.date_container {
+  display: flex;
+  gap: 1em;
+}
+
+.date_input {
+  display: flex;
+  flex-direction: column;
+}
+.date_input p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-bottom: 0.3rem;
+}
+.date_input p:nth-child(3) {
+  font-size: 0.5em;
+  font-style: italic;
+}
+.date_input input {
+  width: 5em;
+  padding: 0.5em 0.75em;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(230, 230, 230);
+  font-family: inherit;
+  font-size: 1.25em;
+}
+
+.btn__wrapper {
+  width: 100%;
+  height: 4rem;
+  position: relative;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.btn__wrapper hr {
+  position: relative;
+  top: 50%;
+  opacity: 0.1;
+  z-index: 0;
+}
+.btn__wrapper button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  padding: 1rem;
+  border-radius: 5rem;
+  border: 0;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1) translateX(-50%);
+}
+.btn:active {
+  background-color: rgb(98, 57, 189);
+  transform: scale(1) translateX(-50%);
+}
+
+h1 {
+  font-style: italic;
+  font-size: 3em;
+  line-height: 1;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 2em;
+  }
+  .btn__wrapper button {
+    left: 100%;
+  }
+  .date_container {
+    width: 80%;
+  }
+}
+.violet {
+  color: hsl(259, 100%, 65%);
+}
+
+.error {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */
